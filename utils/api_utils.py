@@ -22,11 +22,14 @@ def open_weather_api_call_by_geo_location(lat, lon):
     return open_weather_endpoint
 
 
-def open_weather_api_call_with_language_support(id, lang):
-    params = {"id": id, "lang": lang, "appid": api_key}
+def open_weather_api_call_by_zip_code(zipCode):
+    params = {"zip": zipCode, "appid": api_key}
     open_weather_endpoint = requests.get(url, params=params)
     return open_weather_endpoint
 
 
-def response_body(location):
-    return open_weather_api_call(location).json()
+def open_weather_api_call_with_language_support(location, lang):
+    params = {"q": location, "lang": lang, "appid": api_key}
+    open_weather_endpoint = requests.get(url, params=params)
+    return open_weather_endpoint
+
