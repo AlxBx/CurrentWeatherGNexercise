@@ -17,7 +17,6 @@ How to run:
   with your Open Weather API key.
 - Tests can then be individually run by hitting the "play" button on 
   each of the tests in _test_current_weather_data_feature.py_.
-  
-Finally, you can run all tests in the test suite by opening a command line interface
-and navigating to the path of the project directory and entering the following in the command line:
-```python -m pytest```
+- Finally, you can run all tests in the test suite by opening a command line interface and 
+  navigating to the path of the project directory and entering the following in the command line:
+  ```python -m pytest```
